@@ -1,0 +1,24 @@
+extends layout
+block title
+	title #{site.title} - Log in
+
+block content
+	.container
+		.loginpage
+			h1 Log in with your #{site.title} Account
+			if message
+				if message.error
+					.message.error
+						= message.message
+				else
+					.message
+						= message.message
+			form(method="POST", action="")
+				label(for="username") Username
+				input(type="text", name="username")
+				label(for="password") Password
+				input(type="password", name="password")
+				input.button.button_login(type="submit", value="Log in")
+			.button.button_generic
+				a(href="/register") Register
+

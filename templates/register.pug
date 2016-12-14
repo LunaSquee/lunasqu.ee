@@ -1,0 +1,32 @@
+extends layout
+block title
+	title #{site.title} - Register
+
+block content
+	.container
+		.registerpage
+			h1 Register for a #{site.title} Account
+			if message
+				if message.error
+					.message.error
+						= message.message
+				else
+					.message
+						= message.message
+			form(method="POST", action="")
+				label(for="username") Username
+				input(type="text", name="username", value=form_data.username)
+				label(for="display_name") Display name
+				input(type="text", name="display_name", value=form_data.display_name)
+				label(for="password") Password
+				input(type="password", name="password", value=form_data.passwordPlain)
+				label(for="password_again") Password again
+				input(type="password", name="password_again")
+				label(for="email") Email address
+				input(type="email", name="email", value=form_data.email)
+				if recaptcha
+					.g-recaptcha(data-sitekey=recaptcha)
+				input.button.button_login(type="submit", value="Register")
+			.button.button_generic
+				a(href="/login") Log in with an existing account
+		script(src="https://www.google.com/recaptcha/api.js")

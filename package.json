@@ -1,0 +1,55 @@
+{
+  "name": "lunasquee",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evert",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-redis": "^3.1.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "gulp": "^3.9.1",
+    "knex": "^0.12.6",
+    "lodash": "^4.17.2",
+    "morgan": "^1.7.0",
+    "mysql": "^2.12.0",
+    "nodemailer": "^2.6.4",
+    "objection": "^0.6.2",
+    "pug": "^2.0.0-beta6",
+    "socketio": "^1.0.0",
+    "toml": "^2.3.0",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp-csso": "^2.0.0",
+    "gulp-data": "^1.2.1",
+    "gulp-debug": "^3.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-real-favicon": "^0.2.1",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-standard": "^8.0.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.11",
+    "gulp-watch-pug": "^1.0.0",
+    "lazypipe": "^1.0.1",
+    "merge-stream": "^1.0.1",
+    "nib": "^1.1.2",
+    "run-sequence": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LunaSquee/lunasqu.ee.git"
+  }
+}

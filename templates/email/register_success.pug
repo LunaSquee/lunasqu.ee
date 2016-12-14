@@ -1,0 +1,7 @@
+h1 Hello there, #{username}!
+p Your account has been successfully registered on #{site.url}, but we need to make sure that it was actually you.
+p Please click on the link below to activate your #{site.title} account.
+a(href=accountActivationCode) #{accountActivationCode}
+p If you did not create an account on #{site.url}, please ignore this email.
+hr
+small This email was sent as a result of an user action on #{site.url}. Please do not respond to this email.

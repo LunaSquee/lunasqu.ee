@@ -1,0 +1,42 @@
+[server]
+	port=8900
+
+	[server.session]
+		key="session key"
+		secret="session secret"
+
+	[server.cache]
+		redis=6379
+
+	[server.security]
+		# Leave blank to disable
+		recaptcha_site=''
+		recaptcha_secret=''
+		tls_reject=false
+
+[site]
+	title="LunaSquee"
+	url="http://localhost:8900"
+
+[email]
+	enabled=true
+	admin="lunasquee@example.com"
+
+	[email.smtp]
+		host='mail.example.com'
+		port=587
+		tls=true
+
+		[email.smtp.auth]
+			user='lunasquee@example.com'
+			pass=''
+
+[mysql]
+	host='localhost'
+	port=3306
+	user='lunasquee'
+	password='hackme'
+	database='lunasquee'
+
+[log]
+	color=true
